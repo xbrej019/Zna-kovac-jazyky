@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="trans.xsl"?>
+<zahradnictvi>
+	<zbozi>
+			<kategorie>Bylina</kategorie>
+			<puvod>Česko</puvod>
+			<idealni_teplota jednotka="C">20</idealni_teplota>
+			<nazev_cze>Petržel hladkolistá</nazev_cze>
+			<nazev_eng>Parsley</nazev_eng>
+			<nazev_lat>Petroselinum crispum</nazev_lat>			
+			<umisteni>venkovni</umisteni>
+			<cena mena="czk" dph="21">69</cena>
+			<prodejni_forma>sazenice</prodejni_forma>
+			<hodnoceni pocet_hvezd="4.5"/>
+			<frekvence_zalevani do_tydne="2"/>
+	</zbozi>
+	<zbozi>
+		<kategorie>Bylina</kategorie>
+		<puvod>Čína</puvod>
+		<idealni_teplota jednotka="C">18</idealni_teplota>
+		<nazev_cze>Pažitka česneková</nazev_cze>
+		<nazev_eng>Garlic chives</nazev_eng>
+		<nazev_lat>Allium tuberosum</nazev_lat>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">69</cena>
+		<prodejni_forma>sazenice</prodejni_forma>
+		<hodnoceni pocet_hvezd="4"></hodnoceni>
+		<frekvence_zalevani do_tydne="1"/>
+	</zbozi>
+	<zbozi>
+		<kategorie>Bylina</kategorie>
+		<puvod>Řecko</puvod>
+		<idealni_teplota jednotka="C">15</idealni_teplota>
+		<nazev_cze>Vavřín vznešený</nazev_cze>
+		<nazev_eng>Bay leaf</nazev_eng>
+		<nazev_lat>Laurus nobilis</nazev_lat>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">299</cena>
+		<prodejni_forma>sazenice</prodejni_forma>
+		<hodnoceni pocet_hvezd="3"/>
+		<frekvence_zalevani do_tydne="3"/>
+	</zbozi>
+	<zbozi>
+		<kategorie>Ovoce</kategorie>
+		<puvod>Česko</puvod>		
+		<nazev_cze>Angrešt bílý</nazev_cze>	
+		<nazev_lat>Ribes uva-crispa</nazev_lat>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">599</cena>
+		<prodejni_forma>sazenice</prodejni_forma>
+		<hodnoceni pocet_hvezd="4"/>
+		<frekvence_zalevani do_tydne="2"/>
+	</zbozi>
+	<zbozi>
+		<kategorie>Ovoce</kategorie>
+		<puvod>Kanada</puvod>		
+		<nazev_cze>Kanadská borůvka</nazev_cze>		
+		<nazev_lat>Vaccinium corymbosum</nazev_lat>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">199</cena>
+		<prodejni_forma>sazenice</prodejni_forma>
+		<hodnoceni pocet_hvezd="4"></hodnoceni>
+		<frekvence_zalevani do_tydne="1"></frekvence_zalevani>
+	</zbozi>
+	<zbozi>
+		<kategorie>Ovoce</kategorie>
+		<puvod>Nizozemsko</puvod>
+		<nazev_cze>Jahodník stáleplodicí "Ostara"</nazev_cze>		
+		<nazev_lat>Fragaria × ananassa 'Ostara'</nazev_lat>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">179</cena>
+		<prodejni_forma>sazenice</prodejni_forma>
+		<hodnoceni pocet_hvezd="4"></hodnoceni>
+	</zbozi>
+	<zbozi>
+		<kategorie>Zelenina</kategorie>
+		<puvod>Česko</puvod>
+		<nazev_cze>Řeřicha</nazev_cze>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">15</cena>
+		<prodejni_forma>semeno</prodejni_forma>
+		<hodnoceni pocet_hvezd="4"></hodnoceni>
+	</zbozi>
+	<zbozi>
+		<kategorie>Nářadí</kategorie>
+		<vyrobce>Fiskars</vyrobce>
+		<nazev_cze>Sekera X25</nazev_cze>		
+		<cena mena="czk" dph="21">2199</cena>
+		<hodnoceni pocet_hvezd="4"/>
+	</zbozi>
+	<zbozi>
+		<kategorie>Nářadí</kategorie>
+		<vyrobce>Fiskars</vyrobce>
+		<nazev_cze>Nůžky SINGELSTEP</nazev_cze>		
+		<cena mena="czk" dph="21">303</cena>
+		<hodnoceni pocet_hvezd="4"></hodnoceni>
+	</zbozi>
+	<zbozi>
+		<kategorie>Dřevina</kategorie>
+		<puvod>Čína</puvod>
+		<idealni_teplota jednotka="F">60</idealni_teplota>
+		<nazev_cze>Mandloň trojlaločná</nazev_cze>		
+		<nazev_lat>Prunus triloba</nazev_lat>
+		<umisteni>venkovni</umisteni>
+		<cena mena="czk" dph="21">749</cena>
+		<prodejni_forma>sazenice</prodejni_forma>
+		<hodnoceni pocet_hvezd="4"></hodnoceni>
+	</zbozi>
+	
+</zahradnictvi>

@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="zahradnictvi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="zbozi" minOccurs="1" maxOccurs="250">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="kategorie" minOccurs="1" maxOccurs="1"/>
+              <xs:element ref="puvod" minOccurs="0" maxOccurs="1"/>
+              <xs:element ref="vyrobce" minOccurs="0" maxOccurs="1"/>				
+              <xs:element ref="idealni_teplota" minOccurs="0" maxOccurs="1"/>				
+              <xs:element ref="nazev_cze" minOccurs="1" maxOccurs="1"/>
+              <xs:element ref="nazev_eng" minOccurs="0" maxOccurs="1"/>
+              <xs:element ref="nazev_lat" minOccurs="0" maxOccurs="1"/>
+              <xs:element ref="umisteni" minOccurs="0" maxOccurs="1"/>
+              <xs:element ref="cena" minOccurs="1" maxOccurs="1"/>
+              <xs:element ref="prodejni_forma" minOccurs="0" maxOccurs="1"/>
+			  <xs:element ref="hodnoceni" minOccurs="1" maxOccurs="1"/>
+			  <xs:element ref="frekvence_zalevani" minOccurs="0" maxOccurs="1"/>
+			  </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kategorie">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Bylina"/>
+        <xs:enumeration value="Dřevina"/>
+        <xs:enumeration value="Zelenina"/>
+        <xs:enumeration value="Ovoce"/>
+        <xs:enumeration value="Nářadí"/>
+      </xs:restriction>
+    </xs:simpleType>
+    </xs:element>
+    <xs:element name="vyrobce" type="xs:string"/>
+    <xs:element name="puvod" type="xs:string"/>
+<xs:element name="idealni_teplota">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="restrikceTeplota">
+        <xs:attribute name="jednotka" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="C"/>
+              <xs:enumeration value="F"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+        </xs:simpleContent>
+      </xs:complexType>
+    </xs:element>
+	<xs:element name="nazev_cze" type="xs:string"/>		
+	<xs:element name="nazev_eng" type="xs:string"/>		
+	<xs:element name="nazev_lat" type="xs:string"/>
+	<xs:element name="umisteni">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="venkovni"/>
+				<xs:enumeration value="vnitrni"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+    <xs:element name="cena">
+      <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="restrikceCena">
+            <xs:attribute name="mena" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+              <xs:enumeration value="czk"/>
+              <xs:enumeration value="usd"/>
+              <xs:enumeration value="eur"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="dph" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:pattern value="10|15|21"/>
+              </xs:restriction>
+              </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:simpleType name="restrikceTeplota">
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="-30"/>
+          <xs:maxInclusive value="90"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="restrikceCena">
+        <xs:restriction base="xs:double">
+          <xs:minInclusive value="10"/>
+          <xs:maxInclusive value="10000"/>
+        </xs:restriction>
+      </xs:simpleType>
+	<xs:element name="prodejni_forma">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="sazenice"/>
+				<xs:enumeration value="semeno"/>
+			</xs:restriction>
+		</xs:simpleType>		
+	</xs:element>
+	<xs:element name="hodnoceni">
+		<xs:complexType>
+		<xs:simpleContent>
+		<xs:extension base="restrikceHodnoceni">
+			<xs:attribute name="pocet_hvezd" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:double">						
+					</xs:restriction>
+				</xs:simpleType>				
+			</xs:attribute>
+		</xs:extension>
+		</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="restrikceHodnoceni">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="frekvence_zalevani">
+		<xs:complexType>
+		    <xs:attribute name="do_tydne" default="1">
+			    <xs:simpleType>
+				    <xs:restriction base="xs:integer"/>
+			    </xs:simpleType>
+		    </xs:attribute>	
+		</xs:complexType>			
+	</xs:element>	
+    </xs:schema>

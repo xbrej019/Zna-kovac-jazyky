@@ -1,0 +1,163 @@
+﻿.container {
+    padding: 0 1rem;
+    max-width: 100%;
+}
+section{
+  padding: 3rem 0;
+}
+section:first-child{
+    background:white;
+    color:black;
+}
+    section:nth-child(n+2) {
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(214,214,214,1) 80%);
+        color: black;
+    }
+    section:nth-child(2n) {
+        background: rgb(214,214,214);
+        background: linear-gradient(0deg, rgba(214,214,214,1) 20%, rgba(255,255,255,1) 80%);
+        color: black;
+    }
+a{
+  color:black;
+  text-decoration:underline;
+}
+nav {
+    background-color: gainsboro;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 0;    
+}
+    nav a {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Arial';
+        font-weight: bold;        
+    }
+nav a:hover,
+nav a:active,
+nav a:focus{
+  background-color: whitesmoke;
+  color:black;
+}
+.obrazky-flex{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  width: 100%;
+}
+figure img{
+  width: 80%;  
+}
+table{
+  border-collapse: collapse;
+}
+table td,table th{
+  border:2px solid silver;
+  padding: 5px;
+}
+table tr:nth-child(even){
+  background-color: gainsboro;
+  color:black;
+}
+@media only screen and (min-width:600px){
+    nav {
+        width:70%;
+        text-align:center;
+        left:15%;
+    }
+    nav a {        
+        padding-left: 2rem;
+        padding-right: 2rem;        
+        display:inline-block;
+    }
+}
+@media only screen and (min-width:64em){
+  .container{
+    width: 64em;
+    margin:0 auto;   
+  }
+}
+header .background {
+    
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+header .background>div{
+  min-height: 300px;
+}
+.header-text {
+    padding: 2em;
+    background-color: rgba(220, 220, 220,0.5);
+    border-radius: 5rem;
+    text-align: center;
+}
+
+.background >div{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1{
+    font-size:45px;
+}
+h2{
+    font-size:36px;
+}
+h3{
+    font-size:30px;
+    
+}
+header .logo{
+    text-align:center;    
+}
+p.text{
+    text-align:justify;    
+}
+ol.obsah{
+    text-align:justify;
+    background-color:whitesmoke;
+    outline-style:double;
+    outline-color:grey;   
+}
+.obrazek {
+    text-align:center;
+}
+
+.tabulka{
+    text-align:left;
+    margin:auto;
+}
+.list {
+    width: 40%;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    margin: auto;
+    outline: groove;
+    outline-color: grey;
+}
+a:hover{
+    color:darkblue;
+}
+.odkaz{
+    background-color:whitesmoke;
+    padding:5px;
+    border-radius:3px;
+    outline:groove;
+    outline-color:grey;
+    text-align:center;    
+}
+aside{
+    width:30%;
+    padding-left:15px;
+    padding-right:15px;
+    font-style:italic;
+    float:right;
+    background-color:whitesmoke;
+
+}
