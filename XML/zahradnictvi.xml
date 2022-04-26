@@ -11,7 +11,7 @@
 			<umisteni>venkovni</umisteni>
 			<cena mena="czk" dph="21">69</cena>
 			<prodejni_forma>sazenice</prodejni_forma>
-			<hodnoceni pocet_hvezd="4.5"/>
+			<hodnoceni pocet_hvezd="4"/>
 			<frekvence_zalevani do_tydne="2"/>
 	</zbozi>
 	<zbozi>
@@ -86,7 +86,7 @@
 		<vyrobce>Fiskars</vyrobce>
 		<nazev_cze>Sekera X25</nazev_cze>		
 		<cena mena="czk" dph="21">2199</cena>
-		<hodnoceni pocet_hvezd="4"/>
+		<hodnoceni pocet_hvezd="3"/>
 	</zbozi>
 	<zbozi>
 		<kategorie>Nářadí</kategorie>
@@ -104,7 +104,7 @@
 		<umisteni>venkovni</umisteni>
 		<cena mena="czk" dph="21">749</cena>
 		<prodejni_forma>sazenice</prodejni_forma>
-		<hodnoceni pocet_hvezd="4"></hodnoceni>
+		<hodnoceni pocet_hvezd="4"/>
 	</zbozi>
 	
 </zahradnictvi>

@@ -44,12 +44,6 @@ nav a:focus{
   background-color: whitesmoke;
   color:black;
 }
-.obrazky-flex{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  width: 100%;
-}
 figure img{
   width: 80%;  
 }
@@ -159,5 +153,8 @@ aside{
     font-style:italic;
     float:right;
     background-color:whitesmoke;
-
+}
+p.jmeno{
+    font-size:30px;
+    font-weight:bold;
 }
